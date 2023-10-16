@@ -1,3 +1,4 @@
+/*Program to find if the number is odd or even*/
 #include <stdio.h>
 void EvenOdd(int a);
 int main()
