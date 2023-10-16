@@ -1,6 +1,5 @@
-/*Find teh frequency of eacha nd every charcter taken in the string*/
-/*Sort an aray in ascencding orgder*/
-/**/
+/*Find the frequency of each and every charcter taken in the string*/
+/*Sort an array in ascencding order*/
 #include <stdio.h>
 int main()
 {
