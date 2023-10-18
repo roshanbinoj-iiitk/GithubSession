@@ -7,3 +7,5 @@ int main()
     return 0;
 }
 int x=10;
+/*static-used in the same block*/
+/*lifetime-alive until the completion of the program*/
