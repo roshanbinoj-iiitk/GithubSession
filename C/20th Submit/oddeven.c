@@ -14,4 +14,5 @@ void EvenOdd(int a)
         printf("Number is Even");
     else
         printf("Number is Odd");
-}
+}//Smalest of three nis using fns
+//
