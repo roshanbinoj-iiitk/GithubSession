@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>B.Tech. Students</title>
+</head>
+
+<body>
+    <h1>B.Tech. Students</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+        </tr>
+        <!-- Insert student data here -->
+    </table>
+</body>
+
+</html>
+<body>
+    <script type="text/javascript" src="scripts/vendor/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/materialize.min.js"></script>
+    
+    
+      
+    
+    
+<ul id="dropdown5" class="dropdown-content">
+<li><a href="#!idy2020">International Day of Yoga-2020</a></li>
+        <li><a href="#!idy2019">International Day of Yoga-2019</a></li>
+        <li class="divider"></li>
+    <li><a href="#!idy">International Day of Yoga-2018</a></li>
+    </ul>
+
+
+
+
+
+    <ul id="slide-out" class="side-nav right-aligned" style="z-index: 2000; transform: translateX(100%);">
+        <li><a href="#!home" ng-class="{activeSideMenuTab: activeTab=='home'}">Home</a></li>
+        <li><a href="#!whyIIITK" ng-class="{activeSideMenuTab: activeTab=='whyIIIT'}">Why IIIT Kottayam</a></li>
+     <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">Institute</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='institute'}" href="#!institute" style="font-weight:normal;;padding:0 50px">Institute</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='admission'}" href="#!admission">Admission</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='academics'}" href="#!academics">Academics</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='scholarship'}" href="#!scholarship">Scholarship/Educational Loans</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">Courses</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='btech_cs_home'}" href="#!btech_cs_home" style="font-weight: normal; padding: 0px 50px;" class="activeSideMenuTab">B.Tech(CSE)</a></li>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='btech_ec_home'}" href="#!btech_ec_home" style="font-weight:normal;;padding:0 50px">B.Tech(ECE)</a></li>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='btech_cyber_home'}" href="#!btech_cyber_home" style="font-weight:normal;;padding:0 50px">B.Tech(Cyber Security)</a></li>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='btech_ai_home'}" href="#!btech_ai_home" style="font-weight:normal;;padding:0 50px">B.Tech(AI &amp; DATA SCIENCE)</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='http://mtech.iiitkottayam.ac.in'}" href="http://mtech.iiitkottayam.ac.in">M.Tech</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='phd_home'}" href="#!phd_home">PhD</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">People</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='admin'}" href="#!admin" style="font-weight:normal;;padding:0 50px">Administration</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='faculty'}" href="#!faculty">Faculty</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='dept_head'}" href="#!dept_head">Head of Department</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='researchScholar'}" href="#!researchScholar">Research Scholars</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='technical'}" href="#!technical">Technical</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='professional'}" href="#!professional">Professional Support Staff</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='students'}" href="#!students/batch15">B.Tech Students</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='executivemtech'}" href="#!executivemtech">Executive Mtech Students</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='gender'}" href="#!gender">Gender Index</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">Facilities</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/hostel'}" href="#!campus/hostel">Hostel</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/security'}" href="#!campus/security">Security</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/internet'}" href="#!campus/internet">Internet</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/gymnasium'}" href="#!campus/gymnasium">Gymnasium</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/sports'}" href="#!campus/sports">Sports</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/atm'}" href="#!campus/atm">Bank/ATM</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='campus/medical'}" href="#!campus/medical">Medical</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+<li><a ng-class="{activeSideMenuTab: activeTab=='placement'}" href="#!placement">Placement</a></li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">IIC &amp; Clubs</a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='innovations'}" href="#!innovations">Innovation Cell</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='webinar'}" href="#!webinar">IIIT Kottayam-Webinar Series-2020</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='events'}" href="#!events">Gallery</a></li>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='codingClub'}" href="#!codingClub" style="font-weight:normal;padding:0 50px">Technical Club</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='culturalClub'}" href="#!culturalClub">Cultural Club</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='sportsClub'}" href="#!sportsClub">Sports Club</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='socialClub'}" href="#!socialClub">Social Club</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='magazine'}" href="#!magazine">Magazine</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='ieee'}" href="#!ieee">IEEE</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='acm'}" href="#!acm">ACM</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+<li>
+<ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">Research</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='researchPublication'}" href="#!researchPublication" style="font-weight:normal;padding:0 50px">Research Publications</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='researchProject'}" href="#!researchProject">Research Project Fundings</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='awards'}" href="#!awards">Awards &amp; Recognition</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='collaboration'}" href="#!collaboration">International Collaborations</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='researchActivities'}" href="#!researchActivities">Research Activities</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='innovations&amp;startups'}" href="http://icentre.iiitkottayam.ac.in/">Innovations &amp; Startups</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+    <li>
+           <!-- <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">IDY-2020</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='idy2020'}" href="#!idy2020" style="font-weight:normal;padding:0 50px">IDY-2020</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='idy2019'}" href="#!idy">IDY-2019</a></li>
+            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='idy'}" href="#!idy">IDY-2018</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>-->
+        </li>
+
+
+
+        <li><a ng-class="{activeSideMenuTab: activeTab=='career'}" href="data/pdf/recruiterscorner.pdf">Recruiters Corner</a></li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" style="padding:0 32px">Tenders</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a ng-class="{activeSideMenuTab: activeTab=='tenders/livetenders'}" href="#!tenders/liveTenders" style="font-weight:normal;padding:0 50px">Live Tenders</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='tenders/closedtenders'}" href="#!tenders/closedTenders">Closed Tenders</a></li>
+                            <li><a style="font-weight:normal;padding:0 50px" ng-class="{activeSideMenuTab: activeTab=='tenders/cancelledtenders'}" href="#!tenders/cancelledTenders">Cancelled Tenders</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li><a ng-class="{activeSideMenuTab: activeTab=='contact'}" href="#!contact">Contact</a></li>
+        <li><a ng-class="{activeSideMenuTab: activeTab=='media'}" href="#!media">@Media</a></li>
+    </ul>
+    <div class="top-container white hide-on-med-and-down">
+        <div class="flex flex-justify flex-end">
+            <a href="#!home"><img src="data/images/main/logo.jpg" alt="IIIT Kottayam Logo" style="height:80px;position:absolute; top:10px;margin-left: 7%"></a>
+            <div class="custom-spacer"></div>
+            <div class="flex flex-column flex-end">
+                <span class="custom-brand-name big-head notranslate" style="margin:0;font-family: 'Hind', sans-serif;font-size:33px"><a href="#!home" style="color:transparent; margin-right: 40px">भारतीय सूचना प्रौद्योगिकी संस्थान कोट्टायम</a></span>
+                <span class="custom-brand-name big-head notranslate" style="margin:0;font-size:21.5px"><a href="#!home" style="color:transparent; margin-right: 40px;">Indian Institute of Information Technology Kottayam</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="top-container white show-on-medium-and-down" style="display:none">
+        <div class="flex flex-justify flex-end" id="mobile-head">
+            <div class="custom-spacer"></div>
+            <span class="custom-brand-name small-head truncate notranslate" style="margin:0;"><a href="#!home" style="color:transparent">भारतीय सूचना प्रौद्योगिकी संस्थान कोट्टायम</a></span>
+        </div>
+    </div>
+    <nav class="white header flex flex-row flex-justify" id="myHeader">
+        <div style="overflow:hidden" class="hide-on-med-and-down">
+            <a href="#!home"><img id="logo-on-small-nav" src="data/images/main/logo.jpg" alt="IIIT Kottayam Logo" style="height:60px;display:none;padding-top:5px"></a>
+        </div>
+        <div style="display:none" class="show-on-medium-and-down">
+            <a href="#!home"><img src="data/images/main/logo.jpg" alt="IIIT Kottayam Logo" class="custom-responsive-image" style="padding-top:5px"></a>
+        </div>
+        <div class="nav-wrapper">
+            <ul class="right hide-on-med-and-down">
+                <li><a ng-class="{activeMenuTab: activeTab=='home'}" href="#!home">Home</a></li>
+
+                <li><a ng-class="{activeMenuTab: activeTab=='whyIIIT'}" href="#!whyIIITK">Why IIITK</a></li>
+
+                <li><a ng-class="{'activeMenuTab': activeTab=='institute'||activeTab=='academics'|| activeTab=='admission'|| activeTab=='scholarship'}" class="dropdown-button" href="#!institute" data-activates="dropdown2">Institute<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown2" class="dropdown-content">
+    <li><a href="#!institute">Governance</a></li>
+        <li><a href="#!admission">Admission</a></li>
+        <li><a href="#!academics">Academics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a href="#!scholarship">Scholarship/Educational Loans</a></li>
+
+    </ul></li>
+
+                <li><a ng-class="{'activeMenuTab':  activeTab=='btech_cs_home' ||activeTab=='btech_ec_home' ||activeTab=='btech_ai_home' || activeTab=='mtech_home' || activeTab=='phd_home'}" class="dropdown-button activeMenuTab" href="" data-activates="dropdown8" style="">Courses<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown8" class="dropdown-content">
+    <li><a href="#!btech_cs_home">B.Tech(CSE)</a></li>
+    <li><a href="#!btech_ec_home">B.Tech(ECE)</a></li>
+    <li><a href="#!btech_cyber_home">B.Tech(Cyber Security)</a></li>
+    <li><a href="#!btech_ai_home">B.Tech(AI &amp; Data Science)</a></li>
+        <li><a href="http://mtech.iiitkottayam.ac.in">M.Tech</a></li>
+        <li><a href="#!phd_home">PhD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+    </ul></li>
+
+                <li><a ng-class="{activeMenuTab: activeTab=='faculty' || activeTab=='students'|| activeTab=='dept_head' || activeTab=='admin' || activeTab=='researchScholar' || activeTab=='technical' || activeTab=='professional' || activeTab=='executivemtech' || activeTab=='gender'}" class="dropdown-button" href="#!admin" data-activates="dropdown1">People<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!admin">Administration</a></li>
+        <li><a href="#!dept_head">Head of Department</a></li>
+        <li><a href="#!faculty">Faculty</a></li>
+        <li><a href="#!technical">Technical</a></li>
+    <li><a href="#!professional">Professional Support Staff</a></li>
+        <li><a href="#!researchScholar">Research Scholars</a></li>
+        <li class="divider"></li>
+        <li><a href="#!students/batch15">B.Tech Students</a></li>
+     <li><a href="#!executivemtech/mtech_batch23">M.Tech Students</a></li>
+    <li><a href="#!gender">Gender Index</a></li>
+    </ul></li>
+
+                <li><a ng-class="{activeMenuTab: activeTab=='campus' || activeTab=='campus/hostel' || activeTab=='campus/security' || activeTab=='campus/internet' || activeTab=='campus/gymnasium' || activeTab=='campus/sports' || activeTab=='campus/atm' || activeTab=='campus/medical'}" href="#!Campus" class="dropdown-button" data-activates="dropdown3">Facilities<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown3" class="dropdown-content">
+        <li><a href="#!campus/hostel">Hostel</a></li>
+    <li><a href="#!campus/security">Security</a></li>
+        <li><a href="#!campus/internet">IIIT Kottayam Campus Network</a></li>
+    <li><a href="#!campus/gymnasium">Gymnasium</a></li>
+        <li><a href="#!campus/sports">Sports</a></li>
+    <li><a href="">Library</a></li>
+    <li><a href="#!campus/atm">Bank/ATM</a></li>
+    <li><a href="#!campus/medical">Medical Centre</a></li>
+    </ul></li>
+
+                <li><a ng-class="{activeMenuTab: activeTab=='events' || activeTab=='webinar' || activeMenuTab: activeTab=='sportsClub' || activeTab=='culturalClub' || activeTab=='codingClub' || activeTab=='socialClub' || activeTab=='ieee' || activeTab=='acm'|| activeTab=='innovations'}" class="dropdown-button" data-activates="dropdown4" href="#!innovations">IIC &amp; Clubs<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown4" class="dropdown-content">
+    <li><a href="#!innovations">Innovation Cell</a></li>
+        <li><a href="#!fdp_webinar">IIIT Kottayam FDP &amp; Webinars</a></li>
+        <li><a href="#!events">Gallery</a></li>
+        <li><a href="#!culturalClub">Cultural Club</a></li>
+        <li><a href="#!codingClub">Technical Club</a></li>
+        <li><a href="#!sportsClub">Sports Club</a></li>
+        <li><a href="#!socialClub">Trendles Club</a></li>
+        <li><a href="#!magazine">Magazine</a></li>
+    <li><a href="#!ieee">IEEE Student Branch</a></li>
+    <li><a href="#!acm">ACM Student Chapter</a></li>
+
+    </ul></li>
+
+                <!--<li><a ng-class="{activeMenuTab: activeTab=='idy' || activeTab=='idy2019'}" class="dropdown-button" data-activates="dropdown5" href="#!idy2020">IDY-2020<i class="material-icons right notranslate">arrow_drop_down</i></a></li>-->
+
+
+                <li><a ng-class="{activeMenuTab: activeTab=='researchPublication' || activeTab=='researchProject' || activeTab=='awards' || activeTab=='collaboration' || activeTab=='researchActivities' || activeTab=='innovations&amp;startups'}" class="dropdown-button" data-activates="dropdown6" href="#!researchPublication">Research<i class="material-icons right notranslate">arrow_drop_down</i></a><ul id="dropdown6" class="dropdown-content">
+        <li><a href="#!researchPublication">Faculty Research Papers</a></li>
+    <li><a href="#!studentPublication">UG Student Research Papers</a></li>
+    <li><a href="#!researchProject">Research Project Fundings</a></li>
+    <li><a href="#!awards">Awards &amp; Recognition</a></li>
+    <li><a href="#!collaboration">International Collaborations</a></li>
+   <li><a href="#!researchActivities">Research Activities</a></li>
+   <li><a href="http://icentre.iiitkottayam.ac.in/">Innovations &amp; Startups</a></li>
+        <li class="divider"></li>
+
+    </ul></li>
+
+              <li><a ng-class="{activeMenuTab: activeTab=='placement'}" href="#!placement">Placement</a></li>
+
+                <li><a ng-class="{activeMenuTab: activeTab=='recruiters corner'}" href="data/pdf/recruiterscorner.pdf">Recruiters Corner</a></li>
+                <li><a ng-class="{activeMenuTab: activeTab=='media'}" href="#!media">@Media</a></li>
+
+
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons institute-text-green notranslate">menu</i></a>
+        </div>
+    </nav>
+    <!-- ngView: --><div ng-view="" class="custom-view content ng-scope" style=""><style class="ng-scope">
+.chip{color:rgb(8, 55, 97);font-size:16px;height:50px;padding:10px 20px;margin:0 10px 0 0;}
+.material-icons{float:left; padding-right:4px; font-size: 24px;line-height: 32px;}
+</style><style class="ng-scope">    .materialboxed{ margin:10px 0 0 0;border:solid 1px #e0e0e0}    .tabs .tab{min-width:150px;width:20%}    .tabs{background:transparent;overflow-x:hidden}    .tabs .tab a{font-size:16px;color:white;background:transparent;transition:all 0.4s ease-in}    .tabs .tab a:hover{color:white;}    .tabs .tab a.active{color:white;font-weight:bold}    .tabs .indicator{background-color:white}    @media screen and (min-width:995px){        .tabs .indicator{background-color:transparent;}        .tabs .indicator{display: none}        .tabs .tab a.active{background:rgba(0,0,0,0.1);border-radius:4px}    }    .image-grid img{float:left;margin-right:10px;}    td,th{        padding:5px 2px;    }</style>
+<div id="topControl" class="ng-scope"></div>
+<br class="ng-scope">
+<div class="container ng-scope">
+<div class="row">
+    <center><h5>B.Tech in Computer Science and Engineering</h5></center><br>
+    <div class="para justify">
+       The programme is designed to build a strong foundation in Computer Science and Engineering that includes hardware, simulation and emulation. The programme has a blend of Core computer Science courses and elective courses which includes Computer science electives, electronics elective, mathematical electives, science elective, humanities electives and management electives. The BTech CSE programme starts with computation oriented courses and the initial four semesters are focused on creating a strong Computer Science foundation which enables the student to harness the required engineering skills for problem solving using computer science.  <style>div.gallery {  margin: 10px;  border: 5px solid #ccc;  float: left;  width: 380px;}div.gallery:hover {  border: 5px solid #777;}div.gallery img {  width: 100%;  height: auto;}</style><div class="col s12 image-grid"><div class="gallery">	<div class="material-placeholder"><img class="materialboxed initialized" src="data/images/info/cslab1.jpg" data-caption="CS Lab" width="400" height="400"></div> </div><div class="gallery">	<div class="material-placeholder"><img class="materialboxed initialized" src="data/images/info/cslab2.jpg" data-caption="CS Lab" width="400" height="400"></div>  </div>
+</div><div class="col s12"><h5>Admission</h5>
+        <div class="para justify">
+
+            Admission to the B.Tech/B.Tech-MS programme will be based on performance in the Joint Entrance Examination (JEE)/Main conducted by National Testing Agency(NTA) (subject to change if any ordered by Ministry of Education, Govt. of India) through the counselling under JoSAA/CSAB <a href="https://josaa.nic.in/webinfo/Page/Page?PageId=1&amp;LangId=P">Click here for details.</a>..
+            <br><br>
+            The number of seats in each branch of the B.Tech/B.Tech-MS programme for which admission is to be made will be decided by its Academic Advisory Committee/Senate. Seats are reserved for candidates belonging to the Scheduled Castes, Scheduled Tribes, Other Backward Classes, EWS Category and Physically challenged candidates as per the guidelines set by the Government of India.
+            <br><br>
+            <b>(1) The fee approved for the BTech program(2023 admission) is as follows. </b> <br><br>
+             <style type="text/css">table, th, td {
+
+
+border: 1px solid black;
+border-collapse: collapse;
+}
+th {
+text-align: center;
+}
+td {
+text-align: left;justify;
+text-align: center;
+/*font-weight: bold;*/
+}
+.css-serial {
+counter-reset: serial-number; /* Set the serial number counter to 0 */
+}
+.css-serial td:first-child:before {
+counter-increment: serial-number; /* Increment the serial number counter */
+content: counter(serial-number); /* Display the counter */
+}
+</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+<!-- ngInclude: 'views/fees.html' --><div ng-include="'views/fees.html'" class="ng-scope" style=""><style class="ng-scope">
+.chip{color:rgb(8, 55, 97);font-size:16px;height:50px;padding:10px 20px;margin:0 10px 0 0;}
+.material-icons{float:left; padding-right:4px; font-size: 24px;line-height: 32px;}
+</style>
+<div id="topControl" class="ng-scope"></div>
+<br class="ng-scope">
+<div class="container ng-scope">
+<div class="row">
+
+             <style type="text/css">table, th, td {
+
+
+border: 1px solid black;
+border-collapse: collapse;
+}
+th {
+text-align: center;
+}
+td {
+text-align: left;justify;
+text-align: center;
+/*font-weight: bold;*/
+}
+.css-serial {
+counter-reset: serial-number; /* Set the serial number counter to 0 */
+}
+.css-serial td:first-child:before {
+counter-increment: serial-number; /* Increment the serial number counter */
+content: counter(serial-number); /* Display the counter */
+}
+</style>
+
+
+
+            <table>
+                <tbody><tr><th>Details </th>
+                <th colspan="2">First Year</th>
+                <th colspan="2">Second Year</th>
+                <th colspan="2">Third Year</th>
+                <th colspan="2">Fourth Year</th>
+                </tr><tr>
+                    <td></td>
+                    <td>First Semester</td>
+                    <td>Second Semester</td>
+                    <td>Third Semester</td>
+                    <td>Fourth Semester</td>
+                    <td>Fifth Semester</td>
+                    <td>Sixth Semester</td>
+                    <td>Seventh Semester</td>
+                    <td>Eighth Semester</td>
+                </tr>
+                <tr>
+                    <td>Tuition Fee</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                </tr>
+                <tr>
+                    <td>Hostel/facility maintenance fee </td>
+                    <td>28,100/-</td>
+                    <td>28,100/-</td>
+                    <td>30,900/-</td>
+                    <td>30,900/-</td>
+                    <td>34,000/-</td>
+                    <td>34,000/-</td>
+                    <td>37,500/-</td>
+                    <td>37,500/-</td>
+                </tr>
+                <tr>
+                    <td>Mess Advance</td>
+                    <td>25,400/-</td>
+                    <td>25,400/-</td>
+                    <td>27,950/-</td>
+                    <td>27,950/-</td>
+                    <td>30,750/-</td>
+                    <td>30,750/-</td>
+                    <td>33,825/-</td>
+                    <td>33,825/-</td>
+                </tr>
+                <tr>
+                    <td>Medical Insurance</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+
+                </tr>
+                <tr>
+                    <td>Mess Equipment Maintenance Fee</td>
+                    <td colspan="2" style="text-align: center">-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+
+                </tr>
+                <tr>
+                    <td>Caution Deposit (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">11,000/-</td>
+                    <td colspan="2">-</td>
+                    <td colspan="2">Convocation Fee (One- Time Fee)</td>
+                    <td colspan="2">4000/-</td>
+
+                                        </tr>
+                                        <tr>
+                    <td>Sports (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">900/-</td>
+                    <td colspan="6">-</td>
+                                        </tr>
+                                        <tr>
+                    <td>Mess (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">900/-</td>
+                    <td colspan="6">-</td>
+                                        </tr>
+            </tbody></table>
+
+
+
+</div>
+</div>
+<br class="ng-scope">   In view of the above, the initial <b class="ng-scope">first semester</b> payment on joining for the admission-2023 shall be 1,20,000/- towards tuition fee, 28,100/- towards hostel/facility maintenance fee, 25,400/- towards mess advance, Rs. 1100/- towards medical insurance, Rs. 11,000/- towards caution deposit, Rs. 900/- towards sports fee &amp; Rs. 900/- towards mess fee.
+     <br class="ng-scope"><br class="ng-scope">
+<b class="ng-scope">(2) The payment for the category of DASA admission will be as follows </b>
+<br class="ng-scope">
+(a) CIWG :
+(Refer 2.3.1 subclause 2 in DASA) <a href="https://dasanit.org/ " class="ng-scope"> DASA Admission-2023.</a><br class="ng-scope"><br class="ng-scope">
+<table class="ng-scope">
+                <tbody><tr><th>Details </th>
+                <th colspan="2">First Year</th>
+                <th colspan="2">Second Year</th>
+                <th colspan="2">Third Year</th>
+                <th colspan="2">Fourth Year</th>
+                </tr><tr>
+                    <td></td>
+                    <td>First Semester</td>
+                    <td>Second Semester</td>
+                    <td>Third Semester</td>
+                    <td>Fourth Semester</td>
+                    <td>Fifth Semester</td>
+                    <td>Sixth Semester</td>
+                    <td>Seventh Semester</td>
+                    <td>Eighth Semester</td>
+                </tr>
+                <tr>
+                    <td>Tuition Fee</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                    <td>1,20,000/-</td>
+                </tr>
+                <tr>
+                    <td>Hostel/facility maintenance fee </td>
+                    <td>28,100/-</td>
+                    <td>28,100/-</td>
+                    <td>30,900/-</td>
+                    <td>30,900/-</td>
+                    <td>34,000/-</td>
+                    <td>34,000/-</td>
+                    <td>37,500/-</td>
+                    <td>37,500/-</td>
+                </tr>
+                <tr>
+                    <td>Mess Advance</td>
+                    <td>25,400/-</td>
+                    <td>25,400/-</td>
+                    <td>27,950/-</td>
+                    <td>27,950/-</td>
+                    <td>30,750/-</td>
+                    <td>30,750/-</td>
+                    <td>33,825/-</td>
+                    <td>33,825/-</td>
+                </tr>
+                <tr>
+                    <td>Medical Insurance</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+                    <td colspan="2" style="text-align: center">1100/-</td>
+
+                </tr>
+                <tr>
+                    <td>Mess Equipment Maintenance Fee</td>
+                    <td colspan="2" style="text-align: center">-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+                    <td colspan="2" style="text-align: center">250/-</td>
+
+                </tr>
+                <tr>
+                    <td>Caution Deposit (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">11,000/-</td>
+                    <td colspan="2">-</td>
+                    <td colspan="2">Convocation Fee (One- Time Fee)</td>
+                    <td colspan="2">4000/-</td>
+                                        </tr>
+                                        <tr>
+                    <td>Sports (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">900/-</td>
+                    <td colspan="6">-</td>
+                                        </tr>
+                                        <tr>
+                    <td>Mess (One time Fee)</td>
+                    <td colspan="2" style="text-align: center">900/-</td>
+                    <td colspan="6">-</td>
+                                        </tr>
+            </tbody></table>
+1. Mode of reporting at the Institute- <b class="ng-scope">Offline </b><br class="ng-scope">
+2. Date of commencement of classes- <b class="ng-scope">Will be finalized according to the Josaa/CSAB schedule and will be declared later.</b> <br class="ng-scope">
+
+<br class="ng-scope">
+<b class="ng-scope">(b) Non SAARC &amp; SAARC -&gt; As per DASA fee structure <a href="https://dasanit.org/ "> DASA Admission-2023.</a> </b>
+
+    
+
+
+</div>
+
+
+</div>
+<br>
+
+Reporting Instructions for JoSAA/CSAB/DASA Admission 2023 <a href="data/pdf/reporting.pdf"> Click here</a><br><br>
+
+
+The detailed curriculum and regulations can be found here:
+<!--
+            <ul>
+
+           <li> Hostel/facility charges is Rs. 50820/- per year, with 10% increase every year.</li><br>
+                           <li>Tuition fee is Rs. 2,17,800/- per year.</li>
+            </ul>
+<b>
+For the year 2020, a reduction of 10% will be applicable due to the hardships out of Covid-19</b><br><br>
+-->
+          <!--  <br><br>
+        IIIT Kottayam follows an innovative and dynamic curriculum at par with other Institutions of National Importance with focus on the demands of industry and research. Most of the core courses are covered in the first half while the second half of the program largely comprises of need based courses focusing on the demands of the industry as well as thrust on research.-->
+    </div>
+    <br>
+     <!--<div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/EVEN 2021-'22  -ACADEMIC CALENDER FOR B.TECH (Sem IV) [Batch 2020].pdf" target="_blank">EVEN 2021-'22  -ACADEMIC CALENDER FOR B.TECH (Sem IV) [Batch 2020]</a>
+    </div>
+
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/UG January 2022 _Dec 2022 calendar_2022__Final_batch 2021_Final.pdf" target="_blank">Odd 2021-'22 -Academic Calender for B.Tech(Batch 2021)</a>
+    </div>
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/UG January 2022 _Dec 2022 calendar_2022__Final_Sem 6-8 sent to PIC-2.pdf" target="_blank">Even 2021-'22 -Academic Calender for B.Tech(Batch 2019 & 2018)</a>
+    </div>
+
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/ug_calander_20-21.pdf" target="_blank">UG Academic Calendar 2021</a>
+    </div>
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/ug_calander_20-21-1.pdf" target="_blank">UG Academic Calendar Ist and IInd sem 2021</a>
+        <a class="link-color" href="data/pdf/batch2020acad_revised.pdf" target="_blank">UG Academic Calendar Ist and IInd sem 2021</a>
+    </div>
+
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/ug_calander_20-21-1.pdf" target="_blank">UG Academic Calendar Ist and IInd sem 2021</a>
+        <a class="link-color" href="data/pdf/UG Batch_Acad calendar_sem III Batch 2020_circulation.pdf" target="_blank">UG Academic Calendar 3rd sem 2021</a>
+    </div>
+
+<div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/rev_academic_calender.pdf" target="_blank">UG Academic Calendar 2020</a>
+    </div>-->
+    <!--<div class="chip truncate link-color">                                -->
+    <!--    <i class="material-icons">insert_link</i>-->
+    <!--    <a class="link-color" href="#!pdf/academics/AcademicCalendar20/Academic Calendar 2020">UG Academic Calendar 2020</a>-->
+    <!--</div>-->
+    <!--<div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="#!pdf/academics/revisedcurriculum/Course Curriculum">UG Course Curriculum</a>
+    </div>-->
+
+    <!--<div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="#!pdf/academics/courseregulation1/Course Regulations">UG Course Regulations</a>
+    </div> -->
+    <div class="chip truncate link-color">
+       <i class="material-icons">insert_link</i>
+       <a class="link-color" href="https://www.iiitkottayam.ac.in/#!/academics" target="_blank">UG Academic Calender</a>
+   </div>
+    <div class="chip truncate link-color">
+       <i class="material-icons">insert_link</i>
+       <a class="link-color" href="https://www.iiitkottayam.ac.in/#!/academics" target="_blank">B.Tech CSE Curriculum</a>
+   </div>
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="https://www.iiitkottayam.ac.in/#!/academics" target="_blank">UG Course Regulations</a>
+    </div>
+<!--        <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="data/pdf/cs_ece_regulation.pdf" target="_blank">UG Course Regulations</a>
+    </div>
+<div class="chip truncate link-color">                                -->
+<!--            <i class="material-icons">insert_link</i>-->
+<!--            <a class="link-color" href="#!pdf/academics/academicCalendar/Academic Calendar">UG Academic Calendar 2019-->
+
+<!--</a>-->
+<!--        </div>-->
+
+
+    <!--<br>
+
+    <div class="chip truncate link-color">
+        <i class="material-icons">insert_link</i>
+        <a class="link-color" href="#!pdf/academics/exemtech/Executive M.Tech"> Executive MTech Tentative course structure
+
+</a>
+    </div>-->
+
+</div>
+</div>
+</div>
+</div>
+    <footer class="page-footer black-text border border-top border-dull">
+      <div class="container">
+        <div class="row center-align">
+          <div class="col s12">
+                <a href="https://twitter.com/IIITKKottayam" target="new" class="twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/IIITKottayamofficial/" target="new" class="facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/iiit-kottayam" target="new" class="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC3jrKDXjl7_c5bld5x8C1vw" target="new" class="youtube">
+                    <i class="fa fa-youtube"></i>
+                </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m3">
+              <ul>
+          <li><a href="#!lmsredirect" class="black-text">LMS (IIIT Kottayam)</a><img width="30" height="30" src="data/images/info/new1.gif"></li>
+          <li><a href="#!idy" class="black-text">IDY-2022</a></li>
+          <li><a href="#!placement" class="black-text">Placement</a></li>
+                  <li><a href="#!sitemap" class="black-text">Site Map</a></li>
+                  <li><a href="#!events" class="black-text">Events</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1DY5DYKzb2yzneYGRcmefoTStB0E9JfUu?usp=sharing" class="black-text">Gallery</a></li>
+                  <li><a href="https://docs.google.com/document/d/1doyb4eyxv5uo7JZMw4dbKtU_trv8oAU-rnf-EmobaYI/edit?usp=share_link" class="black-text">English @ Ease/Psychological Tips</a></li>
+
+
+              </ul>
+          </div>
+
+          <div class="col s6 m3">
+              <ul>
+                  <li><a href="https://www.mathworks.com/academia/tah-portal/indian-institute-of-information-technology-kottayam-31453279.html" class="black-text">Matlab for IIIT Kottayam)</a></li>
+          <li><a href="#!tenders" class="black-text">Tenders</a></li>
+                  <li><a href="#!career" class="black-text">Career</a></li>
+
+                  <li><a href="#!acm" class="black-text">ACM</a></li>
+                  <li><a href="#!contact" class="black-text">Contact</a></li>
+                    <li><a href="https://drive.google.com/file/d/1ZWPnGnomsmGgfPSbtqZuOUgp6pHrkVyj/view?usp=sharing" class="black-text" target="_blank">Internal Directory</a></li>
+                    <li><a href="https://accounts.google.com/" class="black-text">Institute Email </a></li>
+              </ul>
+          </div>
+          <div class="col s6 m3">
+              <ul>
+                  <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target="_blank" class="black-text">Pay Your Fees Online</a></li>
+        <li><a href="#!campus/gymnasium" class="black-text">Gymnasium</a></li>
+                  <li><a href="#!ieee" class="black-text">IEEE</a></li>
+                  <li><a href="#!campus/hostel" class="black-text">Hostel</a></li>
+                  <li><a href="#!campus/internet" class="black-text">Internet</a></li>
+                  <li><a href="#!campus/sports" class="black-text">Sports and Yoga</a></li>
+                  <li><a href="https://docs.google.com/document/d/1g64N6BUUN_lLy6E9tRtyugtBcy1uCL1C/edit?usp=share_link&amp;ouid=103053165573494839436&amp;rtpof=true&amp;sd=true" class="black-text" target="_blank">Group Mail ID's</a></li>
+              </ul>
+          </div>
+          <div class="col s6 m3">
+              <ul>
+                  <li><a href="data/pdf/RTI.pdf" class="black-text">RTI</a></li>
+                  <li><a href="https://scholarships.gov.in/" target="_blank" class="black-text">National Scholarship Portal</a></li>
+                  <li><a href="#!internal_complaints_committee" class="black-text">Internal Complaints Committee</a></li>
+                  <li><a href="data/pdf/disci.pdf" class="black-text">Disciplinary Action Committee</a></li>
+                  <li><a href="data/pdf/nodal.pdf" class="black-text" target="_blank">SC/ST/OBC cell</a></li>
+                  <li><a href="data/pdf/cvo_new.pdf" class="black-text" target="_blank">CVO</a></li>
+                  <li><a href="#!antiragging" class="black-text">Anti-Ragging</a></li>
+                  <li><a href="#!reach" class="black-text">Reach IIIT Kottayam</a></li>
+                  <li>
+                  <b>GST NO: 32AAAAI9154L1ZJ</b></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="row" style="width:100%">
+            <div class="col s12 center-align black-text">
+                <br>
+                © IIIT Kottayam 2018<br>Indian Institute of Information Technology Kottayam
+                  <p>This page was viewed</p>
+<h1 class="count" id="count">84000</h1>
+<p class="count_times">times</p>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+
+.count {
+font-size: 25px;
+margin: 0;
+}
+
+.count_times {
+color: rgba(255, 255, 255, 0.8);
+letter-spacing: 2px;
+margin: 0;
+}
+
+
+</style>
+<script>
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+fetch('https://api.countapi.xyz/update/IIITK_/IIITK_/?amount=1')
+.then(res => res.json())
+.then(res => {
+    countEl.innerHTML = res.value;
+})
+}
+
+
+</script>
+            </div>
+            <div class="col s12">
+                <br>
+            </div>
+            <div class="col s12 right-align">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+    <script type="text/javascript" src="scripts/vendor/translate.js"></script>
+
+<script>
+    function changeGoogleStyles() {
+        if(($goog = $('.goog-te-menu-frame').contents().find('body')).length) {
+            var stylesHtml = '<style>'+
+                '.goog-te-menu2 {'+
+                    'border:none !important;'+
+                    'width:250px !important;'+
+                    'overflow-y:hidden !important;'+
+                    'overflow-x:auto !important;'+
+                    'box-sizing:border-box !important;'+
+                    'height:auto !important;'+
+                '}'+
+            '</style>';
+            $goog.prepend(stylesHtml);
+        } else {
+            setTimeout(changeGoogleStyles, 50);
+        }
+    }
+    changeGoogleStyles();
+    $( document ).ready(function () {
+        $(".button-collapse").sideNav({closeOnClick: true,edge:'right'});
+        $(".dropdown-button").dropdown({constrainWidth:false,belowOrigin:true,hover:true});
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        var ele=document.getElementById('logo-on-small-nav');
+        function myFunction() {
+        var scrollTop     = $(window).scrollTop(),
+        topContainerOffset = $('#topControl').offset().top,
+        height = $('#topControl').height(),
+        distance = (topContainerOffset - scrollTop);
+        if(Math.round(distance+height)<63){$('nav').css({'box-shadow':'0 0 4px rgba(0,0,0,.1), 0 4px 8px rgba(0,0,0,.1)'})}
+        else{$('nav').css({'box-shadow':'none'})}
+        if (window.pageYOffset >= sticky) {header.classList.add("sticky");ele.style.display="block";document.getElementsByClassName('custom-responsive-image')[0].classList.add('custom-logo-mobile');}
+        else{header.classList.remove("sticky");ele.style.display="none";document.getElementsByClassName('custom-responsive-image')[0].classList.remove('custom-logo-mobile');}}
+    });
+</script>
+
+<div id="ngProgress-container" class="ng-scope"><div id="ngProgress" style="height: 2px; background-color: rgb(56, 178, 71); color: rgb(56, 178, 71); width: 0%; opacity: 1;"></div></div><div class="hiddendiv common"></div><div class="drag-target" data-sidenav="slide-out" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body>

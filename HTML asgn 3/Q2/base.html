@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <table>
+            <caption>Registration form</caption>
+            <tr>
+                <th>Enter login name</th>
+                <th><input type="text" placeholder="Enter login name"></th>
+            </tr>
+            <tr>
+                <td>Enter password</td>
+                <td><input type="password" placeholder="Enter login name"></td>
+            </tr>
+            <tr>
+                <td>Select your gender</td>
+                <td><input type="radio" name="gender">Male
+                    <br>
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td><input type="date" placeholder="mm/dd/yy" required pattern="\d{2}-\d{2}-\d{2}">
+            </tr>
+            <tr>
+                <td class="center"><input type="submit" value="Register"></td>
+                <td class="center"><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

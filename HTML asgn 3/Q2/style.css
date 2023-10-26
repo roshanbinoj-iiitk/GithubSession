@@ -1,0 +1,8 @@
+td center
+{   border: 1px solid black;
+    align-items: center;
+}
+table, td, th, tr
+{   border: 1px solid black;
+    background-color: #CCC ;
+}
