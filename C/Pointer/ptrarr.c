@@ -1,3 +1,4 @@
+/*Print the memory adresses of array using pointer*/
 #include <stdio.h>
 int main()
 {
